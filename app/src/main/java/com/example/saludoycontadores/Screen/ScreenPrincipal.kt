@@ -56,7 +56,7 @@ fun Principal(){
                 .width(250.dp)
                 .wrapContentHeight(Alignment.CenterVertically))
     }
-
+    //Condicion la cual si show es true se muestra el dialogo
     if (show){
         Dialogo(show = show,
             aceptar = aceptar,
@@ -79,6 +79,10 @@ fun Principal(){
             textoSaludo = textoSaludo)
     }
 }
+
+/**
+ * Funcion la cual se enarga de lo que viene siendo la ventana del dialogo tanto la distribucion como la logica
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Dialogo(show : Boolean,
